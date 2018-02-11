@@ -1,0 +1,36 @@
+.kz-snackbar {
+	display: flex;
+	position: fixed;
+    background: #101010;
+    width: 40%;
+	height: 3em;
+    left: 30%;
+    z-index: 1;
+	bottom: -3em;
+	transition: all 0.2s cubic-bezier(0.2, 0.65, 0.24, 0.77);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.kz-snackbar p {
+    margin: auto 1em;
+    color: #ffffffcf;
+}
+
+.kz-snackbar #kz-close {
+    margin: auto 5px auto auto;
+	background: #ffffff14;
+	width: 10%;
+    color: #ffffffcf;
+	border: 0;
+	height: 70%;
+	cursor: pointer;
+	line-height: 0;
+}
+
+@media (max-width: 720px) {
+	.kz-snackbar {
+		width: 100%;
+		left: 0;
+	}
+}
