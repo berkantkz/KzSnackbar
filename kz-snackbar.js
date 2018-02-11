@@ -16,9 +16,12 @@ function showKzSnackbar(text,duration,isVisible) {
 			}, duration*1000);
 		};
 		
-		if (isVisible != true) {
-			document.getElementById('kz-close').style.display = 'none';
-		};
+		if (isVisible) {
+			document.getElementById('kz-close').style.display = 'block' 
+		} else {
+			document.getElementById('kz-close').style.display = 'none' 
+		}
+
 	};
 };
 
