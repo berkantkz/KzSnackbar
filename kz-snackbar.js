@@ -10,7 +10,7 @@ function showKzSnackbar(text,duration,isVisible) {
 			kzcontent.innerHTML = text;
 			setTimeout(function() {
 				var clientHeight = document.getElementById('kz-snackbar').clientHeight;
-				kzsnackbar.style.bottom = -clientHeight;
+				kzsnackbar.style.bottom = "-" + clientHeight + "px";
 			}, duration*1000);
 		};
 		
@@ -24,5 +24,5 @@ function showKzSnackbar(text,duration,isVisible) {
 
 function closeKzSnackbar() {
 	var clientHeight = document.getElementById('kz-snackbar').clientHeight;
-	document.getElementById('kz-snackbar').style.bottom = -clientHeight;
+	document.getElementById('kz-snackbar').style.bottom = "-" + clientHeight + "px";
 };
