@@ -9,7 +9,8 @@ function showKzSnackbar(text,duration,isVisible) {
 			kzsnackbar.style.bottom = "0";
 			kzcontent.innerHTML = text;
 			setTimeout(function() {
-				kzsnackbar.style.bottom = "-3em";
+				var clientHeight = document.getElementById('kz-snackbar').clientHeight;
+				kzsnackbar.style.bottom = -clientHeight;
 			}, duration*1000);
 		};
 		
@@ -22,5 +23,6 @@ function showKzSnackbar(text,duration,isVisible) {
 };
 
 function closeKzSnackbar() {
-	document.getElementById('kz-snackbar').style.bottom = '-3em';
+	var clientHeight = document.getElementById('kz-snackbar').clientHeight;
+	document.getElementById('kz-snackbar').style.bottom = -clientHeight;
 };
