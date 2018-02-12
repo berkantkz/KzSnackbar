@@ -11,3 +11,6 @@ permalink: /sample
 
 <p onclick="showKzSnackbar('Here is a snackbar with close button!',2,true)">Click me to see with close button!</p>
 <p onclick="showKzSnackbar('And here is another one without close button!',2,false)">Click me to see without close button!</p>
+
+<br>
+* berkantkz
