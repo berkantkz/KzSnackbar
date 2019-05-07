@@ -1,28 +1,32 @@
 .kz-snackbar {
 	display: flex;
 	position: fixed;
-    background: #101010;
-    width: 40%;
+	background: #101010;
+	width: 40%;
 	min-height: 3em;
-    left: 30%;
-    z-index: 1;
+	left: 0;
+   	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
 	bottom: -3em;
 	transition: all 0.2s cubic-bezier(0.2, 0.65, 0.24, 0.77);
-    overflow: hidden;
-    word-break: break-word;
+	overflow: hidden;
+	word-break: break-word;
 }
 
 .kz-snackbar p {
-    margin: 1em 1em;
-    color: #ffffffcf;
+	margin: 1em 1em;
+	color: #ffffffcf;
+	padding: 0;
 }
 
 .kz-snackbar #kz-close {
-    margin: auto 0 auto auto;
-    padding: 10px;
+	margin: auto 0 auto auto;
+	padding: 10px;
 	background: #fff0;
 	width: 10%;
-    color: #ffffffcf;
+	color: #ffffffcf;
 	border: 0;
 	height: 70%;
 	cursor: pointer;
