@@ -24,9 +24,9 @@ function showKzSnackbar(text,duration,isVisible) {
 		alert('Calling mismatch. There is/are missing variable(s).');
 	} else {
 		if (kzsnackbar.style.bottom !== "0") {
-			kzsnackbar.style.width = kzsnackbar.childNodes[5].offsetWidth + 100 + 'px';
 			kzsnackbar.style.bottom = "0";
 			kzcontent.innerHTML = text;
+			kzsnackbar.style.width = kzsnackbar.childNodes[5].offsetWidth + 100 + 'px';
 			setKzTimeout();
 		};
 		
