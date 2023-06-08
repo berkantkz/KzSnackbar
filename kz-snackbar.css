@@ -3,10 +3,7 @@
 	position: fixed;
 	background: #101010;
 	min-height: 3em;
-	left: 0;
-   	right: 0;
-	margin-left: auto;
-	margin-right: auto;
+   	right: 15px;
 	z-index: 1;
 	bottom: -3em;
 	transition: all 0.2s cubic-bezier(0.2, 0.65, 0.24, 0.77);
