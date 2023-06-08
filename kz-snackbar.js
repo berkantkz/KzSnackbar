@@ -23,8 +23,8 @@ function showKzSnackbar(text,duration,isVisible) {
 	if (text == null || duration == null || isVisible == null) {
 		alert('Calling mismatch. There is/are missing variable(s).');
 	} else {
-		if (kzsnackbar.style.bottom !== "0") {
-			kzsnackbar.style.bottom = "0";
+		if (kzsnackbar.style.bottom !== "15px") {
+			kzsnackbar.style.bottom = "15px";
 			kzcontent.innerHTML = text;
 			kzsnackbar.style.width = kzsnackbar.childNodes[5].offsetWidth + 100 + 'px';
 			setKzTimeout();
