@@ -26,7 +26,6 @@ function showKzSnackbar(text,duration,isVisible) {
 		if (kzsnackbar.style.bottom !== "15px") {
 			kzsnackbar.style.bottom = "15px";
 			kzcontent.innerHTML = text;
-			kzsnackbar.style.width = document.getElementById('kz-close').offsetWidth + 100 + 'px';
 			setKzTimeout();
 		};
 		
